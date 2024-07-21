@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #151414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator {
+    position: relative;
+    background-image: url('D:\TechnoHack\download.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-color: #333; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    color: rgb(190, 59, 59);
+}
+
+
+
+.calculator-content {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+#display {
+    width: calc(100% - 40px);
+    margin: 20px 0;
+    padding: 15px;
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #888;
+}
+
+button.operator {
+    background-color: #ff9800;
+}
+
+button.clear {
+    background-color: #f44336;
+}
+
+button.equal {
+    background-color: #4caf50;
+}
